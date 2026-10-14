@@ -1,0 +1,19 @@
+# Shared Luau packages, installed by Wally (see README).
+# The architecture document lists Wally as part of the toolchain, and .gitignore
+# already ignores the Packages and ServerPackages folders Wally creates.
+
+[package]
+# Only used if this project is ever published to a registry; the real name of the
+# game is in default.project.json.
+name = "pickaxe-pals/game"
+description = "Pickaxe Pals: a cute mining incremental for Roblox"
+version = "0.1.0"
+realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
+
+[dependencies]
+
+[server-dependencies]
+# ProfileStore is the DataStore wrapper named in the architecture document: it owns
+# autosave and session locking. Published by its author (lm-loleris).
+ProfileStore = "lm-loleris/profilestore@1.0.3"
